@@ -151,7 +151,7 @@ Glitchmax.TextColor3 = Color3.fromRGB(0, 0, 0)
 Glitchmax.TextSize = 16.000
 Glitchmax.TextWrapped = true
 Glitchmax.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+	loadstring(Game:GetObjects("rbxassetid://1241182413")[1].Source)()
 end)
 
 Admin.Name = "Admin"
