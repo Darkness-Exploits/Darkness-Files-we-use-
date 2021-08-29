@@ -1,0 +1,211 @@
+-- Created by ace_swifts
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TPOutsider = Instance.new("TextButton")
+local TPSpartan = Instance.new("TextButton")
+local TPRoman = Instance.new("TextButton")
+local UniversalScripts = Instance.new("TextButton")
+local TPMine = Instance.new("TextButton")
+local UniversalGUI = Instance.new("Frame")
+local Admin = Instance.new("TextButton")
+local LoginScreen = Instance.new("Frame")
+local Password = Instance.new("TextBox")
+local Username = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
+local LoginLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Main.BorderColor3 = Color3.fromRGB(90, 90, 90)
+Main.Position = UDim2.new(0, 129, 0, 179)
+Main.Size = UDim2.new(0, 653, 0, 293)
+Main.Visible = false
+Main.Active = true
+Main.Draggable = true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel.Size = UDim2.new(0, 653, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Noob Hub | ace_swifts#6919"
+TextLabel.TextColor3 = Color3.fromRGB(209, 209, 209)
+TextLabel.TextSize = 18.000
+
+TPOutsider.Name = "TPOutsider"
+TPOutsider.Parent = Main
+TPOutsider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPOutsider.Position = UDim2.new(0, 7, 0, 117)
+TPOutsider.Size = UDim2.new(0, 122, 0, 50)
+TPOutsider.Font = Enum.Font.SourceSans
+TPOutsider.Text = "Tp to Outsider Spawn"
+TPOutsider.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPOutsider.TextSize = 16.000
+TPOutsider.TextWrapped = true
+TPOutsider.MouseButton1Down:connect(function()
+	local pl       = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(267, 147, 69)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+TPSpartan.Name = "TPSpartan"
+TPSpartan.Parent = Main
+TPSpartan.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPSpartan.Position = UDim2.new(0, 7, 0, 175)
+TPSpartan.Size = UDim2.new(0, 122, 0, 50)
+TPSpartan.Font = Enum.Font.SourceSans
+TPSpartan.Text = "Tp to Spartan Spawn"
+TPSpartan.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPSpartan.TextSize = 16.000
+TPSpartan.TextWrapped = true
+TPSpartan.MouseButton1Down:connect(function()
+	local pl       = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-521, 196, 33)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+TPRoman.Name = "TPRoman"
+TPRoman.Parent = Main
+TPRoman.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPRoman.Position = UDim2.new(0, 7, 0, 234)
+TPRoman.Size = UDim2.new(0, 122, 0, 50)
+TPRoman.Font = Enum.Font.SourceSans
+TPRoman.Text = "Tp to Roman Spawn"
+TPRoman.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPRoman.TextSize = 16.000
+TPRoman.TextWrapped = true
+TPRoman.MouseButton1Down:connect(function()
+	local pl       = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-92, 164, 1670)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UniversalScripts.Name = "UniversalScripts"
+UniversalScripts.Parent = Main
+UniversalScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UniversalScripts.Position = UDim2.new(0, 525, 0, 59)
+UniversalScripts.Size = UDim2.new(0, 122, 0, 50)
+UniversalScripts.Font = Enum.Font.SourceSans
+UniversalScripts.Text = "Universal Scrpts"
+UniversalScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+UniversalScripts.TextSize = 16.000
+UniversalScripts.TextWrapped = true
+UniversalScripts.MouseButton1Down:connect(function()
+	UniversalGUI.Visible = true
+end)
+
+TPMine.Name = "TPMine"
+TPMine.Parent = Main
+TPMine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPMine.Position = UDim2.new(0, 7, 0, 59)
+TPMine.Size = UDim2.new(0, 122, 0, 50)
+TPMine.Font = Enum.Font.SourceSans
+TPMine.Text = "Tp to Mines"
+TPMine.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPMine.TextSize = 16.000
+TPMine.TextWrapped = true
+TPMine.MouseButton1Down:connect(function()
+	local pl       = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-557, 138, 353)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+UniversalGUI.Name = "UniversalGUI"
+UniversalGUI.Parent = ScreenGui
+UniversalGUI.Active = true
+UniversalGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UniversalGUI.Position = UDim2.new(0, 129, 0, 486)
+UniversalGUI.Size = UDim2.new(0, 267, 0, 243)
+UniversalGUI.Visible = false
+UniversalGUI.Active = true
+UniversalGUI.Draggable = true
+
+Admin.Name = "Admin"
+Admin.Parent = UniversalGUI
+Admin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Admin.Position = UDim2.new(0, 7, 0, 8)
+Admin.Size = UDim2.new(0, 122, 0, 50)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "FE Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 16.000
+Admin.TextWrapped = true
+Admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+end)
+
+LoginScreen.Name = "LoginScreen"
+LoginScreen.Parent = ScreenGui
+LoginScreen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginScreen.Position = UDim2.new(0, 446, 0, 275)
+LoginScreen.Size = UDim2.new(0, 207, 0, 272)
+LoginScreen.Active = true
+LoginScreen.Draggable = true
+
+Password.Name = "Password"
+Password.Parent = LoginScreen
+Password.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Password.Position = UDim2.new(0, 6, 0, 144)
+Password.Size = UDim2.new(0, 194, 0, 50)
+Password.Font = Enum.Font.SourceSans
+Password.Text = "Password"
+Password.TextColor3 = Color3.fromRGB(0, 0, 0)
+Password.TextSize = 14.000
+
+Username.Name = "Username"
+Username.Parent = LoginScreen
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.Position = UDim2.new(0, 6, 0, 84)
+Username.Size = UDim2.new(0, 194, 0, 50)
+Username.Font = Enum.Font.SourceSans
+Username.Text = "Username"
+Username.TextColor3 = Color3.fromRGB(0, 0, 0)
+Username.TextSize = 14.000
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = LoginScreen
+LoginButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.Position = UDim2.new(0, 6, 0, 214)
+LoginButton.Size = UDim2.new(0, 194, 0, 50)
+LoginButton.Font = Enum.Font.SourceSans
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginButton.TextSize = 14.000
+LoginButton.MouseButton1Down:connect(function()
+	if Username.Text == "Noob" and Password.Text == "Hub" then
+		LoginScreen.Visible = false
+		Main.Visible = true
+	end
+	
+end)
+
+LoginLabel.Name = "LoginLabel"
+LoginLabel.Parent = LoginScreen
+LoginLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginLabel.Position = UDim2.new(0, 6, 0, 19)
+LoginLabel.Size = UDim2.new(0, 194, 0, 50)
+LoginLabel.Font = Enum.Font.SourceSans
+LoginLabel.Text = "Login to Noob Hub"
+LoginLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginLabel.TextScaled = true
+LoginLabel.TextSize = 18.000
+LoginLabel.TextWrapped = true
